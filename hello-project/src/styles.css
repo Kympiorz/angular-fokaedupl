@@ -1,0 +1,25 @@
+.container
+{
+    text-align: center;
+}
+h1
+{
+    color: red;
+}
+p
+{
+    color: blue;
+}
+img
+{
+    max-width: 100%;
+    height: 200px;
+    
+}
+
+.text-danger
+{
+    color: crimson;
+    font-weight: bold;
+    text-transform: uppercase;
+}

@@ -1,0 +1,19 @@
+CMD:
+cd (path to projects)     -  wybieranie sciezki projektu
+ng new nazwa-projektu-lubia-    -  nazywanie projektu i tworzenie go
+================================================
+
+Wazne node_modules usunac przed wrzuceniem na githuba przy pierwszym uruchomieniu 
+w terminalu w VSC wpisac 
+npm install
+
+
+ng serve -o - uruchomienie strony 
+lub 
+npm start - jezeli w pliku package.json zostanie zmienione
+			"start": "ng serve",
+			na
+			"start": "ng serve -o",
+
+aby wylaczyc debugowanie 
+ctrl + c w konsoli x2

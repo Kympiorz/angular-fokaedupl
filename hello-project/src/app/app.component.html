@@ -1,0 +1,46 @@
+<div class="container">
+  <img src="../assets/images/87018c00-694b-11e9-8b5f-c34826306d36.png">
+  <h1>{{title}}</h1>
+  <p>
+    twoje imie : {{name}}<br>
+    twój wiek : {{age}}<br>
+    czy dalej jestes studentem: {{isStudent ? "TAK" : "NIE"}}<br>
+    <button (click)="incrementAge()">+1 do wieku</button>
+  </p>
+
+  <h2>Pipes</h2>
+  <p>
+    {{name | uppercase}}<br>
+    {{name | lowercase}}<br>
+    {{name | titlecase}}<br>
+    {{name | slice:0:2}}<br> <!-- wycina fragment znaku od 0 bierze 1znak-->
+  </p>
+
+  <h2> Daty </h2>
+  <p>
+      {{date}}<br>
+      {{date | date}}<br>
+      {{date | date:'d.MM.y H:mm'}}<br>
+  </p>
+
+  <h2>wywolanie metod</h2>
+  <p>
+    {{ sayHello() }}
+  </p>
+
+  <h2>binding</h2>
+  <p [style.background]="highlight">to bedzie wyroznione</p>
+  <p [style.color]="errorstatus1()">to bedzie wyroznione</p>
+  <button (click)="changeError()">zamien error</button>
+
+
+  <p [class.text-danger] = "isError">tester bledow na klasie</p>
+
+
+  <h2>binding zrodla obrazka</h2>
+  <button (click)="imagechange('angular1.jpg')">zmien obrazek na 1 </button>
+  <button (click)="imagechange('angular2.jpg')">zmien obrazek na 2 </button>
+  <button (click)="imagechange('angular3.png')">zmien obrazek na 3 </button>
+  <br>
+  <img [src] ="'../assets/images/' + imagedayfile" alt="">
+</div>
